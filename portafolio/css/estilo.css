@@ -1,0 +1,655 @@
+/*========================
+
+CSS CODE
+AUTOR: JUAN FRANCISCO LOPEZ MORALES
+
+========================*/
+
+/*========================
+RESET
+========================*/
+*{
+	padding: 0;
+	margin: 0;
+}
+
+/*========================
+GENERAL
+========================*/
+body{
+	background-color: #ECF0F2;
+}
+#wrapper{
+	width: 100%;
+}
+h1, h4{font-family: 'Squada One', cursive;}
+p{
+	font-family: 'Contrail One', cursive;
+	color: #85898A;
+}
+h4{
+	font-size: 36px;
+	color: #17202A;
+	letter-spacing: 1px;
+}
+/*========================
+HEADER
+========================*/
+header{
+	width: 100%;
+	height: 60px;
+	background-color: #17202A;
+	height: 100vh;
+	overflow: hidden;
+}
+header .cont-nav{
+	width: 1100px;
+	height: 60px;
+	margin: auto;
+	position: relative;
+}
+header .cont-logo{
+	position: absolute;
+	left: 0;
+	top: 6px;
+}
+header strong{
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Francois One', sans-serif;
+	color: #fff;
+}
+header .color-logo{
+	/*color: #273746; esto es color del folio*/
+}
+header .cont-name{
+	width: 1100px;
+	margin: auto;
+	margin-top: 15%;
+	display: flex;
+	position: relative;
+}
+header .cont-name .cont-iam{
+	width: 50%;
+	padding: 20px 0;
+	padding-left: 20px;
+	border-left: 8px solid #fff;
+}
+header .cont-name .cont-iam span{
+	font-size: 49px;
+	font-family: 'Squada One', cursive;
+	color: #fff;
+}
+#btnHeader{
+	width: 140px;
+	height: 45px;
+	margin-top: 25px;
+	position: relative;
+	border: 1px solid #F1C40F;
+	cursor: pointer;
+}
+#btnHeader a{
+	width: 140px;
+	display: block;
+	font-weight: bold;
+	height: 35px;
+	color: #F1C40F;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Francois One', sans-serif;
+	letter-spacing: 2px;
+	position: absolute;
+	padding-top: 10px;
+	transition: .7s;
+}
+#btnHeader .btn-color{
+	width: 100%;
+	background-color: #F1C40F;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	transform: scaleX(0);
+	transition: .7s;
+}
+#btnHeader:hover .btn-color{
+	transform: scaleX(1);
+}
+#btnHeader:hover a{
+	color: #000;
+}
+header .cont-name .cont-svg{
+	width: 50%;
+	position: absolute;
+	right: 0;
+	top: -190px;
+}
+header .cont-name .cont-svg .style-svg{
+	width: 100%;
+	color: red;
+}
+/*===========================*/
+#Vector_4{animation: colorUno 10s infinite linear;}
+#Vector_6{animation: colorUno 10s infinite linear;}
+#Vector_12{animation: botonTres 6s infinite linear;}
+#Vector_13{animation: botonDos 6s infinite linear;}
+#Vector_14{animation: botonUno 6s infinite linear;}
+#Vector_27{animation: codeUno 9s infinite linear;}
+#Vector_28{animation: codeDos 9s infinite linear;}
+#zapatos1{animation: colorUno 10s infinite linear;}
+#zapatos2{animation: colorUno 10s infinite linear;}
+@keyframes botonTres{
+	0%{fill: red;}
+	50%{fill: white;}
+}
+@keyframes botonDos{
+	0%{fill: white;}
+	40%{fill: red;}
+}
+@keyframes botonUno{
+	0%{fill: white;}
+	80%{fill: red;}
+}
+@keyframes colorUno{
+	0%{fill: #D138CB;}
+	35%{fill: #F1C40F;}
+	70%{fill: #229954;}
+	100%{fill: #7D3C98;}
+}
+@keyframes codeUno{
+	0%{fill: #2980B9;}
+	35%{transform: translateX(2%);}
+	100%{fill: #E74C3C;}
+}
+@keyframes codeDos{
+	0%{fill: #F1C40F;}
+	35%{transform: translateX(-2%);}
+	100%{fill: #138D75;}
+}
+/*===========================*/
+
+
+/*========================
+NAV
+========================*/
+.nav1{
+	position: absolute;
+	right: 0;
+	top: 13px;
+	list-style: none;
+}
+.nav1 li{
+	float: left;
+	margin-left: 30px;
+	overflow: hidden;
+}
+.nav1 li a{
+	font-family: 'Squada One', cursive;
+	font-size: 19px;
+	color: #fff;
+	text-decoration: none;
+}
+.nav1 li .nav-line{
+	width: 100%;
+	transform: translateX(-100%);
+	height: 3px;
+	/*background-color: #273746;*/
+	transition: .6s;
+	margin-top: 10px;
+}
+.nav1 li:hover .nav-line{
+	/*background-color: #273746;*/
+	transform: translateX(0%);
+	background-color: #F1C40F;
+	margin-top: 10px;
+}
+#line-active{
+	transform: translateX(0%); 
+	background-color: #F1C40F;
+}
+/*========================
+MAIN
+========================*/
+main{
+	width: 100%;
+	padding-top: 30px;
+}
+.line{
+	width: 50px;
+	height: 3px;
+	/*background-color: #273746; color azul*/
+	background-color: #F1C40F;
+	margin-top: 5px;
+}
+
+/*-------Block 1-------*/
+main #block1{
+	width: 1100px;
+	margin: auto;
+	display: flex;
+}
+#block1 .cont-profile{
+	width: 46%;
+	padding: 0 2%;
+	padding-top: 70px;
+}
+#block1 .cont-profile span{
+	font-family: 'Contrail One', cursive;
+	font-weight: bold;
+	color: #273746;
+	font-size: 14px;
+}
+#block1 .cont-profile p{
+	margin-top: 19px;
+}
+#btnCV{
+	background-color: #1C2833;
+	width: 120px;
+	padding: 10px 0;
+	text-align: center;
+	font-family: 'Squada One', cursive;
+	font-size: 19px;
+	cursor: pointer;
+	color: #fff;
+	margin-top: 20px;
+}
+#btnCV:hover{background-color: #2C3E50;}
+#block1 .cont-profile-image{
+	width: 50%;
+	height: 402px;
+	padding-top: 10px;
+}
+.circle1{
+	width: 394px;
+	height: 394px;
+	border-radius: 50%;
+	border: 3px solid  #2C3E50;
+	border-left-color: rgba(0,0,0,0);
+	border-right-color: rgba(0,0,0,0);
+	margin-left: 110px;
+}
+.circle2{
+	width: 344px;
+	height: 344px;
+	border-radius: 50%;
+	border: 3px solid #F1C40F;
+	border-left-color: rgba(0,0,0,0);
+	border-right-color: #2C3E50;
+	margin-top: 23px;
+	margin-left: 23px;
+}
+.circle3{
+	width: 294px;
+	height: 294px;
+	border-radius: 50%;
+	border: 3px solid #F1C40F;
+	border-bottom-color: rgba(0,0,0,0);
+	border-top-color: rgba(0,0,0,0);
+	border-left-color: #2C3E50;
+	margin-top: 23px;
+	margin-left: 23px;
+}
+.circle3 img{
+	width: 90%;
+	height: 90%;
+	border-radius: 50%;
+	margin-top: 5%;
+	margin-left: 5%;
+}
+/*-------Block 2-------*/
+main #block2{
+	width: 1100px;
+	margin: auto;
+	margin-top: 50px;
+}
+#block2 p{margin-top: 19px;}
+#block2 .proyects{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 40px;
+}
+.proyects .cont-proyect{
+	width: 340px;
+	position: relative;
+	overflow: hidden;
+}
+.proyects .cont-proyect .proyect-image img{
+	width: 340px;
+	height: 250px;
+	transition: .8s;
+}
+.proyects .cont-proyect .proyect-hidden{
+	width: 340px;
+	height: 210px;
+	position: absolute;
+	top: 0;
+	background-color: rgba(0,0,0,.8);
+	color: white;
+	text-align: center;
+	padding-top: 40px;
+	opacity: 0;
+	transition: .6s;
+	overflow: hidden;
+}
+.proyects .cont-proyect .proyect-hidden span{
+	display: block;
+	font-family: 'Contrail One', cursive;
+	font-size: 27px;
+	transform: translate(37%, -100%);
+	transition: 1s;
+	opacity: 0;
+}
+.proyects .cont-proyect .proyect-hidden p{
+	transform: translate(-40%, 250%);
+	transition: 1s;
+	opacity: 0;
+	color: #fff;
+}
+.proyect-hidden .cont-btn{
+	display: flex;
+	justify-content: space-around;
+	width: 280px;
+	margin: auto;
+	margin-top: 30px;
+}
+.proyect-hidden .cont-btn .btnProyect{
+	transform: scale(0);
+	transition: 1.5s;
+	opacity: 0;
+}
+.proyect-hidden .cont-btn .btnProyect a{
+	padding: 10px 20px 10px 20px;
+	border: 1px solid #F1C40F;
+	color: #F1C40F;
+	text-decoration: none;
+	font-family: 'Squada One', cursive;
+	transition: .7s;
+}
+.proyect-hidden .cont-btn .btnProyect .btn-active-pro{
+	background-color: #F1C40F;
+	color: #000;
+}
+/*.proyects .cont-proyect:hover .proyect-image img{
+	transform: scale(1.1);
+
+	resolver este problema 
+
+	al pasar el mouse se sale la imagen por abajo
+}*/
+.proyects .cont-proyect:hover .proyect-hidden{
+	opacity: 1;
+}
+.proyects .cont-proyect:hover .proyect-hidden span{
+	transform: translate(0%, 0%);
+	opacity: 1;
+}
+.proyects .cont-proyect:hover .proyect-hidden p{
+	transform: translate(0%, 0%);
+	opacity: 1;
+}
+.proyects .cont-proyect:hover .proyect-hidden .cont-btn .btnProyect{
+	transform: scale(1);
+	opacity: 1;
+}
+.proyect-hidden .cont-btn .btnProyect a:hover{
+	background-color: #F1C40F;
+	color: #000;
+}
+.proyect-hidden .cont-btn .btnProyect .btn-active-pro:hover{
+	background-color: rgba(0,0,0,0);
+	color: #F1C40F;
+}
+/*-------Block 3-------*/
+main #block3{
+	width: 1100px;
+	margin: auto;
+	margin-top: 50px;
+
+}
+#block3 .cont-icon{
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+	margin: auto;
+	margin-top: 10px;
+}
+#block3 .cont-icon .section-icon{
+	width: 100px;
+	height: 100px;	
+	position: relative;
+	transition: 2s;
+}
+#block3 .cont-icon .section-icon:hover .div-icon2{
+	transform: scale(1);
+}
+#block3 .cont-icon .section-icon .div-icon1{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+#block3 .cont-icon .section-icon .div-icon2{
+	background-color: green;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform: scale(0);
+	transition: 1s;
+}
+#block3 .cont-icon .section-icon i{
+	transform: scale(4);
+	margin-top: 40px;
+	margin-left: 40px;
+	color: red;
+}
+/*-------Block 4-------*/
+main #block4{
+	width: 1100px;
+	margin: auto;
+	margin-top: 30px;
+}
+#block4 .cont-exp{
+	display: flex;
+}
+#block4 .cont-exp .section-exp{
+	width: 46%;
+	padding: 2% 2%;
+}
+#block4 .cont-exp .sect1{
+	width: 48%;
+	padding: 2% 0;
+	padding-right: 2%;
+}
+#block4 .cont-exp .sect1 span{color: #F1C40F;}
+#block4 .cont-exp .sect1 p{margin-top: 20px;}
+#block4 .cont-exp .sect1 ul{
+	font-family: 'Contrail One', cursive;
+	color: #85898A;
+	margin-top: 15px;
+}
+#block4 .cont-exp .sect1 ul li{
+	margin-left: 40px;
+}
+#block4 .cont-exp .sect2{position: relative;}
+/*========== Animacion ============*/
+#block4 .cont-exp .sect2 .anima-cont1{
+	position: absolute;
+	top: 80px;
+	left: 390px;
+	transform: rotate(20deg);
+}
+#block4 .cont-exp .sect2 .anima-cont2{
+	position: absolute;
+	top: 77px;
+	left: 390px;
+	transform: rotate(20deg);
+}
+#block4 .cont-exp .sect2 .anima-cont3{
+	position: absolute;
+	top: 157px;
+	left: 390px;
+	transform: rotate(20deg);
+}
+#block4 .cont-exp .sect2 .anima-cont4{
+	position: absolute;
+	top: 157px;
+	left: 393px;
+}
+#block4 .cont-exp .sect2 .anima-cont5{
+	position: absolute;
+	top: 80px;
+	left: 150px;
+	transform: rotate(-30deg);
+}
+#block4 .cont-exp .sect2 .anima-cont6{
+	position: absolute;
+	top: 60px;
+	left: 265px;
+}
+#block4 .cont-exp .sect2 .anima-cont7{
+	position: absolute;
+	top: 60px;
+	left: 253px;
+}
+#block4 .cont-exp .sect2 .anima-cont8{
+	position: absolute;
+	top: 60px;
+	left: 283px;
+}
+#block4 .cont-exp .sect2 .anima-cont1 i{transform: scale(3);}
+#block4 .cont-exp .sect2 .anima-cont2 i{transform: scale(1.4);}
+#block4 .cont-exp .sect2 .anima-cont4 i{transform: scale(1.3); color: yellow;}
+#block4 .cont-exp .sect2 .anima-cont3 i{transform: scale(3);}
+#block4 .cont-exp .sect2 .anima-cont5 i{transform: scale(3); color: yellow;}
+#block4 .cont-exp .sect2 .anima-cont6 i{transform: scale(3);}
+#block4 .cont-exp .sect2 .anima-cont7 i{transform: scale(1.2); color: orange;}
+#block4 .cont-exp .sect2 .anima-cont8 i{transform: scale(1.2); color: blue;}
+/*=================================*/
+#block4 .cont-exp .sect2 p{
+	margin-top: 30px;
+}
+#block4 .cont-exp .sect2 img{
+	width: 100%;
+}
+/*-------Block 5-------*/
+#block5{
+	width: 1100px;
+	margin: auto;
+}
+#block5 form{
+	width: 95%;
+	display: flex;
+	margin: auto;
+	padding: 2% 0;
+	background-color: #fff;
+	margin-top: 20px;
+}
+#block5 form label{
+	font-weight: bold;
+	font-family: 'Contrail One', cursive;
+	color: #273746;
+	display: block;
+	margin-top: 10px;
+}
+#block5 form input{
+	width: 98%;
+	height: 30px; 
+	padding: 0 2%;
+	font-family: 'Contrail One', cursive;
+}
+#block5 form textarea{
+	min-width: 98%;
+	max-width: 98%;
+	min-height: 100px;
+	max-height: 100px;
+	padding: 0 2%;
+	font-family: 'Contrail One', cursive;
+}
+#block5 form .cont-con{
+	width: 42%;
+	padding: 0 4%;
+}
+#btnContact{
+	width: 90px;
+	height: 35px;
+	border: none;
+	border: 1px solid #273746;
+	font-weight: bold;
+	margin-top: 10px;
+	color: #fff;
+	font-family: 'Francois One', sans-serif;
+	letter-spacing: 2px;
+	cursor: pointer;
+	position: relative;
+}
+#btnContact strong{
+	width: 100%;
+	position: absolute;
+	display: block;
+	text-align: center;
+	padding-top: 5px;
+	top: 0;
+	transition: .7s
+}
+#btn-cont-hov{
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	background-color: #273746;
+	transition: .7s
+}
+#btnContact:hover #btn-cont-hov{
+	transform: scaleX(0);
+}
+#btnContact:hover strong{color: #273746;}
+/*========================
+FOOTER
+========================*/
+footer{
+	width: 1100px;
+	margin: auto;
+	margin-top: 40px;
+}
+footer strong{
+	font-size: 25px;
+	font-weight: bold;
+	font-family: 'Francois One', sans-serif;
+}
+.color-icon{color: #273746;}
+footer .cont-foot1{
+	position: relative;
+	height: 40px;
+	border-bottom: 1px solid #F1C40F;
+}
+footer .cont-foot1 .sect-foot1{
+	position: absolute;
+	display: flex;
+}
+footer .cont-foot1 .sect-foot1 p{
+	padding-top: 4px;
+}
+footer .cont-foot1 .sect-foot1 span{
+	color: #85898A;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 0 4px;
+	color: #F1C40F;
+}
+footer .cont-foot1 .sect-foot2{
+	position: absolute;
+	right: 0;
+	display: flex;
+}
+footer .cont-foot1 .sect-foot2 .iconCont{
+	transform: scale(1.6);
+	padding: 0 8px;
+	padding-top: 5px;
+}
+footer .cont-foot1 .sect-foot2 .iconCont a{
+	color: #85898A; 
+}
+footer .cont-foot2{
+	text-align: center;
+	padding: 10px 0;
+}
