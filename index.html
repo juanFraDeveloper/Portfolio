@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Juan Francisco | Frontend web developer</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="autor" content="Juan Francisco Lopez Morales">
+	<meta name="keywords" content="portafolio, juan, francisco, juan francisco">
+	<meta name="description" content="Portafolio personal de juan francisco lopez morales">
+
+	<!--Hoja externa-->
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/resposive.css">
+
+	<!--Logo-->
+	<link rel="shortcut icon" href="img/logo.png">
+
+	<!--Fonts
+		-londrina outline
+		-contrail one
+		-francois one
+		-squada one
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Contrail+One&family=Francois+One&family=Squada+One&display=swap" rel="stylesheet">-->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Contrail+One&family=Francois+One&family=Londrina+Outline&family=Squada+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<!--************************
+		CONTAINER
+	*************************-->
+	<div id="wrapper">
+		<!--************************
+			HEADER
+		*************************-->
+		<header id="headUp">
+			<!--=============== NAV 1 ===============-->	
+			<nav>
+				<div class="cont-nav">
+					<div class="cont-logo changeTopLogo">
+						<a href="index.html">
+							<div class="cont-line-logo">
+								<div class="line-logo1 colorChange"></div>
+								<div class="line-logo2 colorChange"></div>
+								<div class="line-logo3 colorChange"></div>
+							</div>
+							<strong class="color-strong">Juan<span class="color-logo">Designs</span></strong>
+						</a>
+					</div>
+					<ul class="nav1">
+						<li>
+							<a href="#nav1" class="changeColorNav" id="active1" onclick="funActiveNav(this.id)">ABOUT ME</a>
+							<div class="cont-line-nav">
+								<div class="nav-line" id="line-active1"></div>
+								<div class="nav-line navHoverLine"></div>
+							</div> 
+						</li>
+						<li>
+							<a href="#nav2" class="changeColorNav" id="active2" onclick="funActiveNav(this.id)">WORKS</a>
+							<div class="cont-line-nav">
+								<div class="nav-line" id="line-active2"></div>
+								<div class="nav-line navHoverLine"></div>
+							</div>
+						</li>
+						<li>
+							<a href="#nav3" class="changeColorNav" id="active3" onclick="funActiveNav(this.id)">SKILLS</a>
+							<div class="cont-line-nav">
+								<div class="nav-line" id="line-active3"></div>
+								<div class="nav-line navHoverLine"></div>
+							</div>
+						</li>
+						<li>
+							<a href="#nav5" class="changeColorNav" id="active4" onclick="funActiveNav(this.id)">SERVICE</a>
+							<div class="cont-line-nav">
+								<div class="nav-line" id="line-active4"></div><div class="nav-line navHoverLine"></div>
+							</div>
+						</li>
+					</ul>
+					<!--=============== NAV 2 ===============-->	
+					<div id="cont-nav2" onclick="funShowNa2()">
+						<div class="cont-icon-nav2">
+							<i class="fas fa-bars open colorNav2Scroll"></i>
+							<i class="fas fa-times close colorNav2Scroll"></i>
+						</div>	
+					</div>
+					<div class="contNavUl2">
+						<ul class="nav2">
+							<li class="li1">Menú</li>
+							<li class="li2Top">
+								<div class="contIconNav2"><i class="fas fa-user"></i></div>
+								<a href="#nav1" onclick="funHideNav2()">ABOUT ME</a>
+							</li>
+							<li>
+								<div class="contIconNav2"><i class="fas fa-briefcase"></i></div>
+								<a href="#nav2" onclick="funHideNav2()">WORKS</a>
+							</li>
+							<li>
+								<div class="contIconNav2 iconLeftNav2"><i class="fas fa-code"></i></div>
+								<a href="#nav3" class="aLeftNav2" onclick="funHideNav2()">SKILLS</a>
+							</li>
+							<li>
+								<div class="contIconNav2"><i class="fas fa-user-circle"></i></div>
+								<a href="#nav5" onclick="funHideNav2()">SERVICE</a>
+							</li>
+						</ul>
+					</div><!--fin nav 2-->
+				</div>
+			</nav>
+
+			<!--Efecto particulas header-->
+			<div id="particles-js"></div>
+			<!--========================-->
+
+			<div id="headerCont">
+				<div id="brResponsive1"></div>
+				<div class="cont-name">
+					<div class="cont-iam">
+						<div class="line-Iam"></div>
+						<span class="changeIam1 spanIam">Hey there,</span>
+						<span class="changeIam2 spanIam">I'm Juan Francisco,</span>
+						<span class="changeIam3 spanIam">Front-end web developer.</span>
+
+						<div id="btnHeader">
+							<a href="#footer" class="btn-header">
+								<span id="spanBtnHeader1"></span>
+								<span id="spanBtnHeader2"></span>
+								<span id="spanBtnHeader3"></span>
+								<span id="spanBtnHeader4"></span>
+								CONTACT ME
+							</a>
+						</div>
+					</div>
+
+					<!--=========== Codigo svg ============-->
+					<div class="cont-svg">
+						<svg width="854" height="818" viewBox="0 0 854 818" fill="none" xmlns="http://www.w3.org/2000/svg" class="style-svg">
+							<rect width="854" height="818"/>
+							<g id="undraw_launch_day_4e04 1" clip-path="url(#clip0_0_1)">
+								<path id="Vector" d="M707.501 464.249C599.784 627.243 549.122 818 353.751 818C158.38 818 0 659.62 0 464.249C0 268.878 176.535 192.745 353.751 110.499C929.357 -156.643 948.524 99.543 707.501 464.249Z" fill="rgba(0,0,0,0)"/>
+								<g id="luna">
+									<path id="Vector_2" d="M669.522 160.415C706.079 160.415 735.714 130.779 735.714 94.2219C735.714 57.6648 706.079 28.0293 669.522 28.0293C632.965 28.0293 603.329 57.6648 603.329 94.2219C603.329 130.779 632.965 160.415 669.522 160.415Z" fill="#E6E6E6"/>
+								</g>
+								<path id="Vector_3" d="M663.011 56.2426C667.206 56.2426 670.607 52.8418 670.607 48.6467C670.607 44.4516 667.206 41.0508 663.011 41.0508C658.816 41.0508 655.415 44.4516 655.415 48.6467C655.415 52.8418 658.816 56.2426 663.011 56.2426Z" fill="#CBCBCB"/>
+								<path id="Vector_4" d="M676.033 132.201C680.228 132.201 683.628 128.8 683.628 124.605C683.628 120.41 680.228 117.01 676.033 117.01C671.838 117.01 668.437 120.41 668.437 124.605C668.437 128.8 671.838 132.201 676.033 132.201Z" fill="#CBCBCB"/>
+								<path id="Vector_5" d="M705.331 87.7112C708.327 87.7112 710.757 85.282 710.757 82.2855C710.757 79.2891 708.327 76.8599 705.331 76.8599C702.334 76.8599 699.905 79.2891 699.905 82.2855C699.905 85.282 702.334 87.7112 705.331 87.7112Z" fill="#CBCBCB"/>
+								<path id="Vector_6" d="M643.479 117.01C653.068 117.01 660.841 109.236 660.841 99.6475C660.841 90.0588 653.068 82.2856 643.479 82.2856C633.89 82.2856 626.117 90.0588 626.117 99.6475C626.117 109.236 633.89 117.01 643.479 117.01Z" fill="#CBCBCB"/>
+								<path id="Vector_7" d="M441.646 207.075C447.639 207.075 452.497 202.217 452.497 196.224C452.497 190.231 447.639 185.372 441.646 185.372C435.653 185.372 430.794 190.231 430.794 196.224C430.794 202.217 435.653 207.075 441.646 207.075Z" fill="#6C63FF"/>
+								<path id="Vector_8" d="M732.459 235.288C738.452 235.288 743.31 230.43 743.31 224.437C743.31 218.444 738.452 213.586 732.459 213.586C726.466 213.586 721.608 218.444 721.608 224.437C721.608 230.43 726.466 235.288 732.459 235.288Z" fill="#6C63FF"/>
+								<path id="Vector_9" d="M603.329 251.565C606.925 251.565 609.84 248.65 609.84 245.054C609.84 241.458 606.925 238.543 603.329 238.543C599.733 238.543 596.818 241.458 596.818 245.054C596.818 248.65 599.733 251.565 603.329 251.565Z" fill="#E6E6E6"/>
+								<path id="Vector_10" d="M102.002 456.654C105.598 456.654 108.512 453.739 108.512 450.143C108.512 446.547 105.598 443.632 102.002 443.632C98.4059 443.632 95.491 446.547 95.491 450.143C95.491 453.739 98.4059 456.654 102.002 456.654Z" fill="#E6E6E6"/>
+								<path id="Vector_11" d="M487.221 631.359C490.817 631.359 493.732 628.444 493.732 624.848C493.732 621.252 490.817 618.337 487.221 618.337C483.625 618.337 480.71 621.252 480.71 624.848C480.71 628.444 483.625 631.359 487.221 631.359Z" fill="#E6E6E6"/>
+								<path id="Vector_12" d="M589.224 438.245L585.975 441.473L582.747 438.223L580.581 440.375L583.808 443.625L580.558 446.852L582.71 449.019L585.96 445.791L589.188 449.041L591.354 446.889L588.126 443.639L591.376 440.412L589.224 438.245Z" fill="#6C63FF"/>
+								<path id="Vector_13" d="M158.43 544.588L155.18 547.815L151.953 544.565L149.786 546.717L153.014 549.967L149.764 553.194L151.916 555.361L155.165 552.133L158.393 555.383L160.56 553.231L157.332 549.982L160.582 546.754L158.43 544.588Z" fill="#E6E6E6"/>
+								<path id="Vector_14" d="M184.473 355.776L181.223 359.003L177.996 355.754L175.829 357.905L179.057 361.155L175.807 364.383L177.959 366.549L181.208 363.322L184.436 366.571L186.603 364.42L183.375 361.17L186.625 357.942L184.473 355.776Z" fill="#E6E6E6"/>
+								<path id="Vector_15" d="M751.993 155.028L748.743 158.255L745.516 155.006L743.349 157.157L746.577 160.407L743.327 163.635L745.479 165.801L748.729 162.574L751.956 165.823L754.123 163.672L750.895 160.422L754.145 157.194L751.993 155.028Z" fill="#E6E6E6"/>
+								<path id="Vector_16" d="M495.904 245.093L492.654 248.321L489.426 245.071L487.26 247.223L490.487 250.472L487.238 253.7L489.389 255.867L492.639 252.639L495.867 255.889L498.033 253.737L494.806 250.487L498.055 247.26L495.904 245.093Z" fill="#E6E6E6"/>
+								<g id="start2">
+									<path id="Vector_17" opacity="0.8" d="M518.442 405.991L551.413 367.393L584.383 328.794L602.996 307.005C604.025 305.799 602.436 303.918 601.407 305.124L568.436 343.722L535.465 382.321L516.853 404.111C515.823 405.316 517.412 407.197 518.442 405.991V405.991Z" fill="url(#paint0_linear_0_1)"/>
+								</g>
+								<g id="start1">
+									<path id="Vector_18" opacity="0.8" d="M459.845 544.887L492.816 506.289L525.786 467.69L544.399 445.901C545.429 444.695 543.84 442.814 542.81 444.02L509.839 482.618L476.869 521.217L458.256 543.006C457.226 544.212 458.816 546.093 459.845 544.887V544.887Z" fill="url(#paint1_linear_0_1)"/>
+								</g>
+								<path id="Vector_19" d="M293.526 331.322H355.378V355.66C355.378 359.854 353.712 363.875 350.747 366.84C347.782 369.805 343.761 371.471 339.567 371.471H309.337C305.144 371.471 301.122 369.805 298.157 366.84C295.192 363.875 293.526 359.854 293.526 355.66V331.322H293.526Z" fill="#2F2E41"/>
+								<path id="Vector_20" d="M375.996 654.689C361.911 668.959 347.804 669.055 333.676 655.149L322.825 559.198L315.229 655.349C301.11 666.776 287.953 668.315 276.164 655.774C264.919 572.699 258.806 495.52 268.568 436.579L247.951 353.024L294.611 331.322C304.008 354.565 289.188 366.453 322.7 366.055C355.916 365.661 353.435 353.166 352.123 331.322L395.046 347.831C398.702 349.237 401.683 351.984 403.383 355.513C405.083 359.041 405.372 363.085 404.193 366.82L382.506 435.494C390.855 470.16 382.283 566.594 375.996 654.689Z" fill="#E6E6E6"/>
+								<path id="Vector_21" d="M310.888 738.243C310.888 738.243 276.248 741.278 271.607 739.367C271.314 739.246 271.029 739.115 270.752 738.973C263.856 735.452 263.646 725.591 270.091 721.3L283.76 712.2L271.824 648.178L317.941 648.721L310.888 738.243Z" fill="#2F2E41"/>
+								<path id="Vector_22" d="M336.931 738.786C336.931 738.786 371.572 741.82 376.212 739.91C376.505 739.789 376.79 739.658 377.067 739.516C383.964 735.995 384.174 726.134 377.728 721.843L364.059 712.743L380.879 648.721H332.591L336.931 738.786Z" fill="#2F2E41"/>
+								<path id="Vector_23" d="M255.547 510.367L262.413 537.833C263.257 541.209 263.016 544.764 261.723 547.995C260.43 551.226 258.152 553.967 255.212 555.829V555.829C252.837 557.333 250.118 558.208 247.311 558.37C244.504 558.532 241.702 557.976 239.169 556.755C236.637 555.534 234.457 553.687 232.836 551.39C231.214 549.093 230.205 546.421 229.903 543.626L228.419 529.899L222.993 399.444C222.993 388.594 226.21 377.987 232.236 368.964C238.263 359.941 246.829 352.907 256.852 348.751L267.483 344.343L255.547 510.367Z" fill="#E6E6E6"/>
+								<path id="Vector_24" d="M428.082 398.361L428.049 399.131L423.665 504.432L422.819 524.778L422.656 528.814L421.169 542.541C420.926 544.797 420.221 546.979 419.098 548.951C417.975 550.923 416.459 552.643 414.644 554.005C412.828 555.366 410.752 556.34 408.544 556.865C406.337 557.39 404.045 557.455 401.811 557.057C399.576 556.659 397.448 555.806 395.558 554.55C393.668 553.295 392.056 551.664 390.822 549.759C389.589 547.854 388.76 545.716 388.388 543.478C388.016 541.239 388.108 538.948 388.659 536.747L395.528 509.282L395.376 507.242L394.465 494.481L383.592 343.258L394.226 347.664C404.243 351.829 412.803 358.866 418.827 367.888C424.852 376.909 428.072 387.512 428.082 398.361V398.361Z" fill="#E6E6E6"/>
+								<path id="Vector_25" d="M327.225 518.191C287.808 518.191 263.493 504.521 263.15 504.323L264.234 502.443C264.718 502.723 313.483 530.076 385.128 506.366L385.811 508.426C366.932 514.8 347.151 518.097 327.225 518.191V518.191Z" fill="#2F2E41"/>
+								<path id="Vector_26" d="M288.194 618.235C279.519 598.717 279.475 513.883 279.478 510.281L281.648 510.283C281.648 511.161 281.688 598.254 290.178 617.354L288.194 618.235Z" fill="#2F2E41"/>
+								<path id="Vector_27" d="M292.706 619.111C284.979 619.111 279.845 617.465 276.497 615.578C270.403 612.141 269.146 607.458 269.096 607.261L271.198 606.723L270.147 606.992L271.196 606.718C271.24 606.882 272.338 610.78 277.659 613.741C283.519 617 295.314 619.432 318.218 612.506L318.845 614.583C307.884 617.897 299.34 619.111 292.706 619.111Z" fill="#2F2E41"/>
+								<path id="Vector_28" d="M273.323 341.674L271.155 341.78L279.479 511.741L281.647 511.634L273.323 341.674Z" fill="#2F2E41"/>
+								<path id="Vector_29" d="M361.796 618.235L359.812 617.354C368.301 598.254 368.343 511.161 368.342 510.283L370.512 510.281C370.514 513.883 370.47 598.717 361.796 618.235Z" fill="#2F2E41"/>
+								<path id="Vector_30" d="M357.284 619.111C350.65 619.111 342.108 617.898 331.144 614.583L331.772 612.506C354.676 619.431 366.468 617.001 372.33 613.741C377.652 610.78 378.749 606.882 378.792 606.718L380.894 607.261C380.843 607.458 379.586 612.141 373.492 615.578C370.145 617.465 365.009 619.111 357.284 619.111Z" fill="#2F2E41"/>
+								<path id="Vector_31" d="M376.658 341.674L368.351 511.635L370.519 511.741L378.826 341.78L376.658 341.674Z" fill="#2F2E41"/>
+								<path id="Vector_32" d="M355.248 367.131L339.101 391.003H304.377L292.767 367.131H297.867L306.548 386.663H335.846L349.953 367.131H355.248Z" fill="#6C63FF"/>
+								<path id="Vector_33" d="M394.443 379.067L394.725 379.631L394.443 380.152V379.067Z" fill="black"/>
+								<path id="Vector_34" d="M430.252 398.361L430.219 399.131L409.634 405.11L396.895 379.631L409.928 355.737C416.278 360.878 421.399 367.373 424.915 374.748C428.432 382.123 430.255 390.19 430.252 398.361V398.361Z" fill="#6C63FF"/>
+								<path id="Vector_35" d="M221.658 398.361L221.691 399.131L242.276 405.11L255.015 379.631L241.983 355.737C235.632 360.878 230.511 367.373 226.995 374.748C223.478 382.123 221.655 390.19 221.658 398.361V398.361Z" fill="#6C63FF"/>
+								<path id="Vector_36" d="M324.452 349.226C356.215 349.226 381.964 323.477 381.964 291.715C381.964 259.952 356.215 234.203 324.452 234.203C292.689 234.203 266.941 259.952 266.941 291.715C266.941 323.477 292.689 349.226 324.452 349.226Z" fill="#E6E6E6"/>
+								<path id="Vector_37" d="M324.452 341.63C347.825 341.63 366.772 322.683 366.772 299.31C366.772 275.938 347.825 256.991 324.452 256.991C301.08 256.991 282.132 275.938 282.132 299.31C282.132 322.683 301.08 341.63 324.452 341.63Z" fill="#2F2E41"/>
+								<path id="Vector_38" d="M424.284 504.432L423.403 524.778L395.571 509.825L394.849 507.242L393.9 494.481L424.284 504.432Z" fill="#6C63FF"/>
+								<path id="Vector_39" d="M226.324 504.432L227.25 524.778L256.503 509.825L257.263 507.242L258.26 494.481L226.324 504.432Z" fill="#6C63FF"/>
+								<path id="Vector_40" d="M339.678 392.089H303.698L283.777 351.139L282.753 336.41L284.918 336.26L285.913 350.568L305.057 389.918H338.525L363.075 353.628L368.301 337.605L370.366 338.277L364.958 354.718L339.678 392.089Z" fill="#2F2E41"/>
+							</g>
+							<defs>
+								<linearGradient id="paint0_linear_0_1" x1="516.519" y1="355.558" x2="603.329" y2="355.558" gradientUnits="userSpaceOnUse">
+									<stop stop-color="white"/>
+									<stop offset="1" stop-color="white" stop-opacity="0.3"/>
+								</linearGradient>
+								<linearGradient id="paint1_linear_0_1" x1="457.923" y1="494.454" x2="544.733" y2="494.454" gradientUnits="userSpaceOnUse">
+									<stop stop-color="white"/>
+									<stop offset="1" stop-color="white" stop-opacity="0.3"/>
+								</linearGradient>
+								<clipPath id="clip0_0_1">
+									<rect width="853.297" height="818" fill="white"/>
+								</clipPath>
+							</defs>
+						</svg>
+					</div>
+				</div>
+				<div id="brResponsive2"></div>
+			</div>
+		</header>
+		<!--************************
+			MAIN
+		*************************-->
+		<main>
+			<!------Block 1------->
+			<section id="mainBlock1">
+				<div id="block1">
+					<div class="cont-mov-nav">
+						<div id="nav1" class="mov"></div>
+					</div>
+					<div class="cont-profile">
+						<span class="scroll1Block1">MORE</span>
+						<h4 class="scroll2Block1">ABOUT ME</h4>
+						<div class="line scrollLine1"></div>
+						<div id="imgResponsive">
+							<img src="https://paulafotografia.com/wp-content/uploads/2018/08/27-4907-pp_gallery/DSC_4350-1024x682.jpg" alt="Imagen de perfil personal">
+						</div>
+
+						<p class="scroll3Block1">I am a junior developer who loves to program and at the same time loves to design as well. I am passionate about technology, where I have a diverse set of skills, ranging from design to programming.</p>
+
+						<div id="btnCV">
+							<div id="spanBtnBlock1"></div>
+							<a href="pdf/CV-Juan-Francisco-López-Morales -Desarrollador web.pdf" download="PortafolioPersonal" target="_blank">DOWNLOAD CV</a>
+						</div>
+					</div>
+					<div class="cont-profile-image">
+						<div class="image-profile">
+							<img src="https://artelove.com/wp-content/uploads/2022/02/fotos-perfil-profesional-artelove-cartagena-murcia-copia-1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div id="cont-pestana">
+					<div id="block-pestana">
+						<div id="pestana"></div>
+					</div>
+				</div>
+			</section>
+			<!------Block 2------->
+			<section id="section-projects">
+				<div id="cont-block2-text">
+					<div class="cont-mov-nav">
+						<div id="nav2" class="mov"></div>
+					</div>
+					<h4 class="scroll1Block2">WORKS</h4>
+					<div class="line scrollLine2"></div>
+
+					<p class="scroll2Block2">These are some of the templates that I have made throughout my learning where I have put most of my knowledge into practice. However, one of my biggest challenges was to develop the CRUD with PHP because that was my first experience with PHP and MySQL.</p>
+				</div>
+				<div id="block2">
+					<div id="slider-project">
+						<div class="projects">
+							<!--car 1-->
+							<div class="cont-project scrollBlock2 scrollProject1">
+								<div class="project-image">
+									<img src="img/proyecto2.JPG" alt="">
+								</div>
+								<div class="project-hidden">
+									<span>ViajesCr</span>
+									<p>This page was built from scratch with HTML, CSS, JavaScript, and jQuery.</p>
+									<div class="cont-btn">
+										<div class="btnProject contActiveProject">
+											<div class="conBtnColor activeProject"></div>
+											<a href="#">
+												<i class="fas fa-external-link-alt"></i>
+												Go to site
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--car 2-->
+							<div class="cont-project scrollBlock2 scrollProject2">
+								<div class="project-image">
+									<img src="img/proyecto3.JPG" alt="">
+								</div>
+								<div class="project-hidden">
+									<span>CRUD with PHP</span>
+									<p>This website was built from scratch with Bootstrap, HTML, CSS, PHP, MySQL, and JavaScript.</p>
+									<div class="cont-btn">
+										<div class="btnProject contActiveProject">
+											<div class="conBtnColor activeProject"></div>
+											<a href="#">
+												<i class="fas fa-external-link-alt"></i>
+												Go to site
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--car 3-->
+							<div class="cont-project scrollBlock2 scrollProject3">
+								<div class="project-image">
+									<img src="img/proyecto1.JPG" alt="">
+								</div>
+								<div class="project-hidden">
+									<span>TuCampingCr</span>
+									<p>This page was built from scratch with HTML, CSS, JavaScript, and jQuery.</p>
+									<div class="cont-btn">
+										<div class="btnProject contActiveProject">
+											<div class="conBtnColor activeProject"></div>
+											<a href="#">
+												<i class="fas fa-external-link-alt"></i>
+												Go to site
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--car 4
+							<div class="cont-project">
+								<div class="project-image">
+									<img src="img/proyecto2.JPG" alt="">
+								</div>
+								<div class="project-hidden">
+									<span>Titulo 4</span>
+									<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Voluptatum, nemo accusamus.</p>
+									<div class="cont-btn">
+										<div class="btnProject contActiveProject">
+											<div class="conBtnColor activeProject"></div>
+											<a href="#">
+												<i class="fas fa-external-link-alt"></i>
+												Ir al sitio
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>-->
+						</div>
+					</div>
+					<div id="btn-slider-left" class="btnSlider"><i class="fas fa-caret-left"></i></div>
+					<div id="btn-slider-right" class="btnSlider leftBtn"><i class="fas fa-caret-right"></i></div>
+				</div>
+			</section>
+			<!------Block 3------->
+			<section id="block3">
+				<div class="cont-mov-nav">
+					<div id="nav3" class="mov"></div>
+				</div>
+				<div id="fondo1-block3"></div>
+				<div id="fondo2-block3"></div>
+				<div id="cont-block3">
+					<h4 class="scroll1Block3">SKILLS</h4>
+					<div class="line scrollLine3"></div>
+
+					<p class="scroll2Block3">These are some of the skills that I picked up throughout my learning and I can just say that I really love programming and design where my goal is to keep learning more technologies.</p>
+
+					<div class="cont-icon pad-icon1">
+						<!--icon 1-->
+						<div class="section-icon scroll1Skill" title="HTML">
+							<div class="div-icon2 color-icon1"><i class="fab fa-html5 left1"></i></div>
+							<div class="div-icon1"><i class="fab fa-html5 left1"></i></div>
+							<div class="line-skill scrollLineSkill1"></div>
+						</div>
+						<!--icon 2-->
+						<div class="section-icon scroll2Skill" title="CSS">
+							<div class="div-icon2 color-icon2"><i class="fab fa-css3-alt left1"></i></div>
+							<div class="div-icon1"><i class="fab fa-css3-alt left1"></i></div>
+							<div class="line-skill scrollLineSkill2"></div>
+						</div>
+						<!--icon 3-->
+						<div class="section-icon  scroll3Skill" title="JavaScript">
+							<div class="div-icon2 color-icon3"><i class="fab fa-js"></i></div>
+							<div class="div-icon1"><i class="fab fa-js"></i></div>	
+							<div class="line-skill scrollLineSkill3"></div>
+						</div>
+						<!--icon 4-->
+						<div class="section-icon scroll4Skill" title="jQuery">
+							<div class="div-icon2 block3_icon_img"><img src="img/jquery2.fw.png" alt="logo de jquery"></div>
+							<div class="div-icon1 block3_icon_img"><img src="img/jquery1.fw.png" alt="logo de jquery"></div>	
+							<div class="line-skill scrollLineSkill4"></div>
+						</div>
+					</div>
+
+					<div class="cont-icon pad-icon2">
+						<!--icon 4-->
+						<div class="section-icon scroll5Skill" title="Bootstrap">
+							<div class="div-icon2 color-icon5"><i class="fab fa-bootstrap left2"></i></div>
+							<div class="div-icon1"><i class="fab fa-bootstrap left2"></i></div>
+							<div class="line-skill scrollLineSkill5"></div>	
+						</div>
+						<!--icon 5-->
+						<div class="section-icon scroll6Skill" title="PHP">
+							<div class="div-icon2 color-icon6"><i class="fab fa-php left3"></i></div>
+							<div class="div-icon1"><i class="fab fa-php left3"></i></div>
+							<div class="line-skill scrollLineSkill6"></div>
+						</div>
+						<!--icon 6-->
+						<div class="section-icon scroll7Skill" title="MySQL">
+							<div class="div-icon2 block3_icon_img"><img src="img/mysql2.fw.png" alt="logo de mysql"></div>
+							<div class="div-icon1 block3_icon_img"><img src="img/mysql1.fw.png" alt="logo de mysql"></div>
+							<div class="line-skill scrollLineSkill7"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!------Block 4------->
+			<section id="mainBlock4">
+				<div class="cont-mov-nav">
+					<div id="nav4" class="mov"></div>
+				</div>
+				<div id="block4">
+					<h4 class="scroll1Block4 titulo_b4">SERVICE</h4>
+					<div class="line scrollLine4"></div>
+					
+					<div class="block4-service top_box_service">
+						<div class="items-block4">
+							<div class="service-text fondo-service1">
+								<div id="box-efect">
+									<div class="box-fondo efect1-fondo"></div>
+									<div class="box-text-efect">
+										<div class="icon-service">
+											<i class="far fa-file-code"></i>
+										</div>
+										<h4>Web development</h4>
+										<p>Front-end knowledge to develop a web page.</p>
+									</div><!--fin cont text-->
+								</div>
+							</div><!--fin cont fondo-->
+						</div><!--fin cont card-->
+
+						<div class="items-block4">
+							<div class="service-text fondo-service2">
+								<div id="box-efect">
+									<div class="box-fondo efect2-fondo"></div>
+									<div class="box-text-efect">
+										<div class="icon-service">
+											<i class="fas fa-laptop"></i>
+										</div>
+										<h4>Web design</h4>
+										<p>Knowledge to create mockups of a web page.</p>
+									</div><!--fin cont text-->
+								</div>
+							</div><!--fin cont fondo-->
+						</div><!--fin cont card-->
+					</div>	
+
+					<div class="block4-service">
+						<div class="items-block4">
+							<div class="service-text fondo-service3">
+								<div id="box-efect">
+									<div class="box-fondo efect3-fondo"></div>
+									<div class="box-text-efect">
+										<div class="icon-service">
+											<i class="fas fa-image"></i>
+										</div>
+										<h4>Illustrator</h4>
+										<p>Knowledge of adove Illustrator to create vectors.</p>
+									</div><!--fin cont text-->
+								</div>
+							</div><!--fin cont fondo-->
+						</div><!--fin cont card-->
+
+						<div class="items-block4">
+							<div class="service-text fondo-service4">
+								<div id="box-efect">
+									<div class="box-fondo efect4-fondo"></div>
+									<div class="box-text-efect">
+										<div class="icon-service">
+											<i class="fas fa-laptop-code"></i>
+										</div>
+										<h4>Templates</h4>
+										<p>Ability to work with templates such as Wordpress templates.</p>
+									</div><!--fin cont text-->
+								</div>
+							</div><!--fin cont fondo-->
+						</div><!--fin cont card-->
+					</div>
+						
+				</div>
+			</section>
+			<div class="cont-bottom">
+				<div class="up">
+					<a href="#headUp">
+						<i class="fas fa-caret-up"></i>
+					</a>
+				</div>
+
+				<div class="cont-redes-bottom">
+					<a href="https://www.instagram.com/juanf8785/" target="_blank" title="Instagram"><i class="fab fa-instagram bottom-red1"></i></a>
+					<a href="https://www.linkedin.com/in/juan-francisco-lopez-morales-3755871b7?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BmNo7ZuteT6mXFDJTZF%2BV6A%3D%3D" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in bottom-red2"></i></a>
+					<a href="https://github.com/juanFraDeveloper" target="_blank" title="Github"><i class="fab fa-github bottom-red3"></i></a>
+					<div class="line-redes"></div>
+				</div>			
+			</div>
+		</main>
+		<!--************************
+			FOOTER
+		*************************-->
+		<footer id="footer">
+			<div class="cont-foot1">
+				<div class="box-logo">
+					<div class="cont-logo">
+						<div class="cont-line-logo">
+							<div class="line-logo1"></div>
+							<div class="line-logo2"></div>
+							<div class="line-logo3"></div>
+						</div>
+						<strong>Juan<span id="color-logo2">Designs</span></strong>
+					</div>
+					<div class="cont_text_footer">
+						Thank You for visiting my website. I really appreciate that. Have a wonderful day! 
+					</div>
+				</div>
+				<div class="sect-foot1">
+					<a href="mailto:juanfranciscocontacto@gmail.com" id="footShow" >
+						juanfranciscocontacto@gmail.com
+					</a>
+					<span>|</span>
+					<p>+506 7172-8610</p>
+					<span>|</span>
+					<p>San José - Desamparados</p>
+					<a href="mailto:juanfranciscocontacto@gmail.com" id="footOcult">
+						juanfranciscocontacto@gmail.com
+					</a>
+				</div>
+
+				<div class="sect-foot2">
+					<!--iconos-->
+					<div class="iconCont"><a href="https://www.linkedin.com/in/juan-francisco-lopez-morales-3755871b7?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BmNo7ZuteT6mXFDJTZF%2BV6A%3D%3D" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a></div>
+					<div class="iconCont"><a href="https://www.instagram.com/juanf8785/" target="_blank" title="Instagram"><i class="fab fa-instagram-square"></i></a></div>
+					<div class="iconCont"><a href="https://github.com/juanFraDeveloper" target="_blank" title="Github"><i class="fab fa-github"></i></a></div>
+				</div>
+			</div>
+			<div class="cont-foot2">
+				<p>© 2022 | Coded by Juan Francisco López Morales</p>
+			</div>
+		</footer>
+	</div>
+
+	<!--
+		I am a developer and designer from India🇮🇳. I have a passion for programming and designing. I'd call myself a Jack of all trades but master of none. I am addicted to Cats,🍦, JS and anything Open Source.
+	-->
+
+	<!--Link JQuery-->
+	<!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+	<script src="js/jquery-3.6.0.min.js"></script>
+
+	<!--Link particulas-->
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+	<!--Link externos-->
+	<script src="js/scroll.js"></script>
+	<script src="js/codigo.js"></script>
+
+	<!--Link Font awesome-->
+	<script src="https://kit.fontawesome.com/044efe1a9f.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
